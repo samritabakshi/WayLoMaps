@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-md-12">
+        <h3>This is page 1</h3>
+    </div>
+    <div class="col-md-12">
+        <h5>Enter Data to store in local storage</h5>
+        <div class="col-md-3" style="padding-left: 0">
+            <textarea name="name" rows="4" cols="40" [(ngModel)]="lsData"></textarea>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary" type="button" name="button" (click)="saveLocalStorage(lsData)">
+                Save To Local Storage
+            </button>
+        </div>
+    </div>
+    <div class="col-md-12" style="padding-top: 20px;">
+        <div class="col-md-2">
+            <button class="btn btn-primary" type="button" name="button" (click)="getHttpReqData()">
+                GET HTTP REQUEST
+            </button>
+        </div>
+        <div class="col-md-2">
+            <textarea name="name" rows="4" cols="40" [(ngModel)]="getReqData"></textarea>
+        </div>
+    </div>
+</div>

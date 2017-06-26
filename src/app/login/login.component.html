@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <div class="row justify-content-md-center">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-header text-center bg-inverse text-white">
+                    <h4>Login</h4>
+                </div>
+                <div class="card-block">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input class="form-control" type="text" id="username" [(ngModel)]="data.username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input class="form-control" type="password" id="password" [(ngModel)]="data.password" disabled="{{!data.username}}">
+                    </div>
+                    <button class="btn btn-outline-primary pull-right col-md-6" (click)="login()">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true"></div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-5">
+            <p class="text-muted text-center"><small>The username will be saved in the browser local storage!</small></p>
+        </div>
+    </div>
+</div>
